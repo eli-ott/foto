@@ -1,7 +1,7 @@
-CREATE DATABASE Foto;
+CREATE DATABASE IF NOT EXISTS Foto;
 USE Foto;
 
-CREATE TABLE `user` (
+CREATE TABLE IF NOT EXISTS user (
     id_user INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     pseudo varchar(30) NOT NULL,
     nom varchar(50) NOT NULL,
@@ -13,7 +13,7 @@ CREATE TABLE `user` (
     warn BOOLEAN NOT NULL
 );
 
-CREATE TABLE `photo` (
+CREATE TABLE IF NOT EXISTS photo (
     id_photo INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     id_user INT NOT NULL,
     titre varchar(50) NOT NULL,
@@ -24,10 +24,10 @@ CREATE TABLE `photo` (
     CONSTRAINT id_user_FK FOREIGN KEY (id_user) REFERENCES user(id_user)
 );
 
-CREATE TABLE `envoyer` (
+CREATE TABLE IF NOT EXISTS envoyer (
     id_envoyeur INT NOT NULL,
     id_receveur INT NOT NULL,
-    `message` text NOT NULL,
+    message text NOT NULL,
     CONSTRAINT id_envoyeur_FK FOREIGN KEY (id_envoyeur) REFERENCES user(id_user),
     CONSTRAINT id_receveur_FK FOREIGN KEY (id_receveur) REFERENCES user(id_user)
 );
