@@ -5,7 +5,7 @@
  */
 @mixin setFont($type, $size) {
 	font-optical-sizing: auto;
-	font-family: map-get($map: $font-families, $key: $type), sans-serif;
+	font-family: $font-family, sans-serif;
 	font-weight: map-get($map: $font-weights, $key: $type);
 	line-height: 1.15em;
 

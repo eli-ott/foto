@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	 * @param {Function} callback The callback to add the fetched HTML to the DOM
 	 */
 	function n(src, callback) {
-		console.log(src);
 		fetch(src)
 			.then(res => res.text())
 			.then(ret => callback(ret));
