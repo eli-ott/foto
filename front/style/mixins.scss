@@ -13,7 +13,7 @@
 		letter-spacing: map-get($letter-spacing, 'mobile', $type);
 		font-size: map-get($font-sizes, 'mobile', $size);
 	}
-	@media screen and (width > 1024px) and (width <= 1920px) {
+	@media screen and (width > 1024px) {
 		letter-spacing: map-get($letter-spacing, 'desktop', $type);
 		font-size: map-get($font-sizes, 'desktop', $size);
 	}

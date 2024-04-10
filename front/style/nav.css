@@ -32,7 +32,7 @@ nav {
   padding: 0 15px;
   border-bottom: solid 2px #0b0b15;
 }
-nav div {
+nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,18 +51,20 @@ nav div {
   font-family: "Cousine", sans-serif;
   font-weight: 400;
   line-height: 1.15em;
+  outline: none;
+  text-decoration: none;
 }
 @media screen and (width <= 800px) {
-  nav div {
+  nav a {
     font-size: 20px;
   }
 }
-@media screen and (width > 1024px) and (width <= 1920px) {
-  nav div {
+@media screen and (width > 1024px) {
+  nav a {
     font-size: 28px;
   }
 }
-nav div img {
+nav a img {
   width: 60px;
 }
 nav ul {
@@ -91,13 +93,17 @@ nav ul {
     font-size: 16px;
   }
 }
-@media screen and (width > 1024px) and (width <= 1920px) {
+@media screen and (width > 1024px) {
   nav ul {
     font-size: 18px;
   }
 }
 nav ul a {
+  outline: none;
   text-decoration: none;
+}
+nav ul a:hover {
+  text-decoration: underline 1px #0b0b15;
 }
 
 /*# sourceMappingURL=nav.css.map */
