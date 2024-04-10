@@ -1,0 +1,133 @@
+/** COLORS */
+/** TEXT RELATED VARIABLES */
+/** ALL SPACINGS */
+/**
+ * Set the font for the content based on screen size and desired values
+ */
+/**
+ * Create a flex display with center alignment by default
+ */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #0b0b15;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  gap: 15px;
+  position: relative;
+  padding: 15px;
+  width: 100vw;
+  background: #0b0b15;
+}
+footer p {
+  font-optical-sizing: auto;
+  font-family: "Cousine", sans-serif;
+  font-weight: 400;
+  line-height: 1.15em;
+  color: #f3f8ff;
+}
+@media screen and (width <= 800px) {
+  footer p {
+    font-size: 16px;
+  }
+}
+@media screen and (width > 1024px) {
+  footer p {
+    font-size: 18px;
+  }
+}
+footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  gap: 25px;
+}
+footer .links div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  gap: 15px;
+}
+footer .links div .title {
+  font-optical-sizing: auto;
+  font-family: "Cousine", sans-serif;
+  font-weight: 400;
+  line-height: 1.15em;
+  color: #f3f8ff;
+}
+@media screen and (width <= 800px) {
+  footer .links div .title {
+    font-size: 20px;
+  }
+}
+@media screen and (width > 1024px) {
+  footer .links div .title {
+    font-size: 28px;
+  }
+}
+footer .links div ul {
+  font-optical-sizing: auto;
+  font-family: "Cousine", sans-serif;
+  font-weight: 400;
+  line-height: 1.15em;
+  list-style-type: none;
+}
+@media screen and (width <= 800px) {
+  footer .links div ul {
+    font-size: 16px;
+  }
+}
+@media screen and (width > 1024px) {
+  footer .links div ul {
+    font-size: 18px;
+  }
+}
+footer .links div ul li {
+  margin-bottom: 10px;
+}
+footer .links div ul li a {
+  color: #f3f8ff;
+}
+footer .copyright {
+  position: absolute;
+  font-size: 14px;
+  bottom: 15px;
+  right: 15px;
+}
+
+/*# sourceMappingURL=footer.css.map */
