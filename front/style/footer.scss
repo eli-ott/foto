@@ -1,0 +1,48 @@
+@import './main.scss';
+
+footer {
+	@include flex($direction: column, $justify: start, $align: start, $gap: $margin-xs);
+	position: relative;
+
+	padding: $margin-xs;
+	width: 100vw;
+
+	background: $dark;
+
+	p {
+		@include setFont(content, small);
+		color: $light;
+	}
+	.links {
+		@include flex($justify: start, $align: start, $gap: $margin-s);
+
+		div {
+			@include flex($direction: column, $justify: start, $align: start, $gap: $margin-xs);
+
+			.title {
+				@include setFont(content, medium);
+				color: $light;
+			}
+			ul {
+				@include setFont(content, small);
+
+				list-style-type: none;
+
+				li {
+					margin-bottom: $margin-xxs;
+					a {
+						color: $light;
+					}
+				}
+			}
+		}
+	}
+	.copyright {
+		position: absolute;
+
+		font-size: 14px;
+
+		bottom: $margin-xs;
+		right: $margin-xs;
+	}
+}
