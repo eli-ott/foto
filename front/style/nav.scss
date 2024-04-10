@@ -1,0 +1,29 @@
+@import './main.scss';
+
+nav {
+	@include flex($justify: space-between);
+
+	padding: 0 $margin-xs;
+
+	border-bottom: solid 2px $dark;
+
+	div {
+		@include flex($justify: start, $align: center, $gap: $margin-xs);
+		@include setFont(content, medium);
+
+		img {
+			width: 60px;
+		}
+	}
+
+	ul {
+		@include flex($justify: end, $align: end, $gap: $margin-s);
+		@include setFont(content, small);
+
+		list-style-type: none;
+
+		a {
+			text-decoration: none;
+		}
+	}
+}
