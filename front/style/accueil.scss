@@ -1,0 +1,21 @@
+@import './main.scss';
+.banner {
+	@include flex();
+	background-image: url('../assets/images/banner.png');
+	height: 80vh;
+	background-position: bottom;
+	background-size: cover;
+}
+
+.title_accueil {
+	color: $light;
+}
+
+.cta {
+	@include setFont(content, small);
+	background-color: $blue;
+	color: $light;
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+}

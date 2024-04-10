@@ -1,0 +1,64 @@
+/** COLORS */
+/** TEXT RELATED VARIABLES */
+/** ALL SPACINGS */
+/**
+ * Set the font for the content based on screen size and desired values
+ */
+/**
+ * Create a flex display with center alignment by default
+ */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #0b0b15;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0;
+  background-image: url("../assets/images/banner.png");
+  height: 80vh;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.title_accueil {
+  color: #f3f8ff;
+}
+
+.cta {
+  font-optical-sizing: auto;
+  font-family: "Cousine", sans-serif;
+  font-weight: 400;
+  line-height: 1.15em;
+  background-color: #3378df;
+  color: #f3f8ff;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+@media screen and (width <= 800px) {
+  .cta {
+    font-size: 16px;
+  }
+}
+@media screen and (width > 1024px) and (width <= 1920px) {
+  .cta {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=accueil.css.map */
