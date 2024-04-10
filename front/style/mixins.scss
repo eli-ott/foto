@@ -1,0 +1,40 @@
+@use 'sass:map';
+
+/**
+ * Set the font for the content based on screen size and desired values
+ */
+@mixin setFont($type, $size) {
+	font-optical-sizing: auto;
+	font-family: map-get($map: $font-families, $key: $type), sans-serif;
+	font-weight: map-get($map: $font-weights, $key: $type);
+	line-height: 1.15em;
+
+	@media screen and (width <= 800px) {
+		letter-spacing: map-get($letter-spacing, 'mobile', $type);
+		font-size: map-get($font-sizes, 'mobile', $size);
+	}
+	@media screen and (width > 1024px) and (width <= 1920px) {
+		letter-spacing: map-get($letter-spacing, 'desktop', $type);
+		font-size: map-get($font-sizes, 'desktop', $size);
+	}
+}
+
+/**
+ * Create a flex display with center alignment by default
+ */
+@mixin flex($direction: row, $wrap: nowrap, $justify: center, $align: center, $gap: 0) {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: $direction $wrap;
+	flex-flow: $direction $wrap;
+	-webkit-box-pack: $justify;
+	-ms-flex-pack: $justify;
+	justify-content: $justify;
+	-webkit-box-align: $align;
+	-ms-flex-align: $align;
+	align-items: $align;
+	gap: $gap;
+}

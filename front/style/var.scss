@@ -1,0 +1,59 @@
+/** COLORS */
+
+//light with different transparencies
+$light: #f3f8ff;
+$light-25: #f3f8ffbf;
+$light-50: #f3f8ff80;
+$light-75: #f3f8ff40;
+//dark with different transparencies
+$dark: #0b0b15;
+$dark-25: #0b0b15bf;
+$dark-50: #0b0b1580;
+$darl-75: #0b0b1540;
+//colors
+$blue: #3378df;
+
+/** TEXT RELATED VARIABLES */
+
+//different font families
+$font-family: 'Cousine';
+
+//font weights based on different contents
+$font-weights: (
+	header: 800,
+	content: 400
+);
+//font sizes
+$font-sizes: (
+	desktop: (
+		small: 24px,
+		medium: 34px,
+		large: 44px,
+		x-large: 124px
+	),
+	mobile: (
+		small: 20px,
+		medium: 24px,
+		large: 64px,
+		x-large: 64px
+	)
+);
+//the letter spacing on different devices
+$letter-spacing: (
+	desktop: (
+		header: 0.125em
+	),
+	mobile: (
+		header: 0.075em
+	)
+);
+
+/** ALL SPACINGS */
+
+$margin-xxs: 10px;
+$margin-xs: 15px;
+$margin-s: 25px;
+$margin-m: 50px;
+$margin-l: 100px;
+$margin-xl: 150px;
+$margin-xxl: 300px;
