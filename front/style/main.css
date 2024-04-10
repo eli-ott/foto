@@ -1,0 +1,17 @@
+/** COLORS */
+/** TEXT RELATED VARIABLES */
+/** ALL SPACINGS */
+/**
+ * Set the font for the content based on screen size and desired values
+ */
+/**
+ * Create a flex display with center alignment by default
+ */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #0b0b15;
+}
+
+/*# sourceMappingURL=main.css.map */
