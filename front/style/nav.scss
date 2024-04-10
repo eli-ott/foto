@@ -7,12 +7,12 @@ nav {
 
 	border-bottom: solid 2px $dark;
 
-	a {
+	.logo {
 		@include flex($justify: start, $align: center, $gap: $margin-xs);
 		@include setFont(content, medium);
 
-        outline: none;
-        text-decoration: none;
+		outline: none;
+		text-decoration: none;
 
 		img {
 			width: 60px;
@@ -26,7 +26,7 @@ nav {
 		list-style-type: none;
 
 		a {
-            outline: none;
+			outline: none;
 			text-decoration: none;
 
 			&:hover {

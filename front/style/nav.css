@@ -32,7 +32,7 @@ nav {
   padding: 0 15px;
   border-bottom: solid 2px #0b0b15;
 }
-nav a {
+nav .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,16 +55,16 @@ nav a {
   text-decoration: none;
 }
 @media screen and (width <= 800px) {
-  nav a {
+  nav .logo {
     font-size: 20px;
   }
 }
 @media screen and (width > 1024px) {
-  nav a {
+  nav .logo {
     font-size: 28px;
   }
 }
-nav a img {
+nav .logo img {
   width: 60px;
 }
 nav ul {
