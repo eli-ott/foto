@@ -1,0 +1,29 @@
+@import './main.scss';
+
+section {
+	@include flex();
+
+	background: cover / center url(../assets/images/backdrop-form.jpg) no-repeat;
+
+	height: 100vh;
+	width: 100vw;
+
+	form {
+		@include flex($gap: $margin-m);
+
+		padding: $margin-m;
+
+		background: $dark-50;
+		border-radius: 35px;
+
+		h1 {
+			@include setFont(header, large);
+		}
+		input {
+			@include setFont(content, small);
+
+			padding: $margin-s;
+			color: $light;
+		}
+	}
+}
