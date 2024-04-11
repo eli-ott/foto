@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `user` (
     type_photo_pref varchar(50) NOT NULL COMMENT 'Son type de photo préféré',
     date_creation DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'La date de création de son compte',
     warn BOOLEAN NOT NULL DEFAULT 0 COMMENT 'Si le compte a été warn ou non',
-    CONSTRAINT id_mot_de_passe_fk FOREIGN KEY (id_mot_de_passe) REFERENCES user(id_user)
+    CONSTRAINT id_mot_de_passe_fk FOREIGN KEY (id_mot_de_passe) REFERENCES mot_de_passe(id_mot_de_passe)
 );
 
 CREATE TABLE IF NOT EXISTS `photo` (
